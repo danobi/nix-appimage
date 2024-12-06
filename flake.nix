@@ -11,7 +11,8 @@
     };
 
     appimage-runtime = {
-      url = "github:AppImageCrafters/appimage-runtime";
+      # Fork until https://github.com/AppImageCrafters/appimage-runtime/pull/14 is merged
+      url = "github:danobi/appimage-runtime/23f655a9313a6b962e072f12534982b925ecb8f7";
       flake = false;
     };
 
