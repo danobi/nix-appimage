@@ -53,7 +53,7 @@
                 own-squashfuse
                 zstd
                 zlib
-                lzma
+                xz
                 lz4
                 lzo
               ];
