@@ -88,7 +88,7 @@
         mkappimage = { drv, entrypoint, name, exclude ? [] }:
           let
             arch = builtins.head (builtins.split "-" system);
-            closure = pkgs.writeReferencesToFile drv;
+            closure = pkgs.writeClosure drv;
             extras = [
               "AppRun f 555 0 0 cat ${packages.apprun}"
               "entrypoint s 555 0 0 ${entrypoint}"
